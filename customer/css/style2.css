@@ -1,0 +1,282 @@
+.window {
+    height: 540px;
+    width: 1000px;
+    background: #fff;
+    display: flex;
+    border-radius: 30px;
+    z-index: 10;
+    background: #fafafa;
+}
+
+.order-info {
+    height: 100%;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.price {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    color: #4488dd;
+}
+
+.order-table td:first-of-type {
+    width: 25%;
+}
+
+.order-table {
+    position: relative;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #ddd;
+}
+
+.order-table td:last-of-type {
+    vertical-align: top;
+    padding-left: 25px;
+}
+
+.order-info-content {
+    table-layout: fixed;
+
+}
+
+.full-width {
+    width: 100%;
+}
+
+.pay-btn {
+    border: none;
+    background: #22b877;
+    line-height: 2em;
+    border-radius: 10px;
+    font-size: 19px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    width: calc(100% - 50px);
+    transition: all .2s ease;
+}
+
+.pay-btn:hover {
+    background: #22a877;
+    color: #eee;
+    transition: all .2s ease;
+}
+
+.total {
+    margin-top: 25px;
+    font-size: 20px;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 30px;
+    right: 27px;
+    left: 35px;
+}
+
+.dense {
+    line-height: 1.2em;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.input-field {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    margin-top: 3px;
+    line-height: 1.5em;
+    font-size: 20px;
+    font-size: 1.3rem;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credit-info {
+    background: #4488dd;
+    height: 100%;
+    width: 50%;
+    color: #eee;
+    justify-content: center;
+    font-size: 14px;
+    font-size: .9rem;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+}
+
+.dropdown-btn {
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.5em;
+    cursor: pointer;
+    position: relative;
+    transition: background .2s ease;
+}
+
+.dropdown-btn:after {
+    content: '\25BE';
+    right: 8px;
+    position: absolute;
+}
+
+.dropdown-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: background .2s ease;
+}
+
+.dropdown-select {
+    display: none;
+}
+
+.credit-card-image {
+    display: block;
+    max-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.credit-info-content {
+    margin-top: 25px;
+    flex-flow: column;
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .window {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 0px;
+    }
+
+    .order-info {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        border-radius: 0px;
+    }
+
+    .credit-info {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        border-radius: 0px;
+    }
+
+    .pay-btn {
+        border-radius: 0px;
+    }
+}
+
+.receipt-main {
+    background: #ffffff none repeat scroll 0 0;
+    border-bottom: 12px solid #333333;
+    border-top: 12px solid #9f181c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 30px !important;
+    position: relative;
+    box-shadow: 0 1px 21px #acacac;
+    color: #333333;
+    font-family: monospace;
+}
+
+.receipt-main p {
+    color: #333333;
+    line-height: 1.42857;
+}
+
+.receipt-footer h1 {
+    font-size: 15px;
+    font-weight: 400 !important;
+    margin: 0 !important;
+}
+
+
+.receipt-main thead {
+    background: #414143 none repeat scroll 0 0;
+}
+
+.receipt-main thead th {
+    color: #fff;
+}
+
+.receipt-right h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 7px 0;
+}
+
+.receipt-right p {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.receipt-right p i {
+    text-align: center;
+    width: 18px;
+}
+
+.receipt-main td {
+    padding: 9px 20px !important;
+}
+
+.receipt-main th {
+    padding: 13px 20px !important;
+}
+
+.receipt-main td {
+    font-size: 13px;
+    font-weight: initial !important;
+}
+
+.receipt-main td p:last-child {
+    margin: 0;
+    padding: 0;
+}
+
+.receipt-main td h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.receipt-header-mid .receipt-left h1 {
+    font-weight: 100;
+    margin: 34px 0 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.receipt-header-mid {
+    margin: 24px 0;
+    overflow: hidden;
+}

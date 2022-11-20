@@ -1,0 +1,86 @@
+#contests .post-item {
+    margin-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#contests .last-post-item {
+    margin-bottom: 0px;
+}
+
+#contests .post-item .thumb > div {
+    overflow: hidden;
+}
+
+#contests .post-item .thumb img {
+    width: 100%;
+    transition: all .7s ease;
+}
+
+#contests .post-item .thumb img:hover {
+    transform: scale(1.2);
+}
+
+#contests .post-item .right-content {
+    padding-top: 8px;
+}
+
+#contests .post-item .right-content .post-info {
+    margin-top: 16px;
+}
+
+#contests .post-item .right-content span.post-category {
+    font-size: 15px;
+    color: var(--white);
+    padding: 4px 12px;
+    background-color: var(--primary);
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#contests .post-item .right-content span.post-date {
+    font-size: 15px;
+    color: var(--light);
+    text-align: right;
+    float: right;
+    margin-top: 4px;
+}
+
+#contests .post-item .right-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 8px;
+    padding-top: 4px;
+    line-height: 30px;
+    transition: .3s ease;
+    border-top: 1px solid var(--text);
+}
+
+#contests .post-item .right-content h4:hover {
+    color: var(--primary);
+}
+
+#contests .post-item .right-content .post-info {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--light);
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--text);
+}
+
+#contests .post-item .right-content span.post-author {
+    display: inline-block;
+    font-size: 16px;
+}
+
+#contests .post-item .right-content span.post-share {
+    font-size: 16px;
+    text-align: right;
+    float: right;
+    margin-top: 4px;
+}
